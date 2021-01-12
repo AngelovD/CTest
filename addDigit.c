@@ -6,7 +6,18 @@ int main(){
     int a,b;
     a = 3;
     b = 5;
-    printf("%d",addDigit(a,b));
+    int res = a & b;
+
+    //printf("%d\n",addDigit(a,b));
+
+    printf("%d\n",res);
+    res = a | b;
+
+    printf("%d\n",res);
+    res = a ^ b;
+    printf("%d",res);
+    a=a<<1;
+    printf("\n%d",a);
 }
 
 int addDigit(int first, int second){
